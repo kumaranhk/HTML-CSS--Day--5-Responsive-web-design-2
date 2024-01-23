@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laud Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        .main{
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
+        .content{
+            border: 2px solid black;
+            padding: 2px;
+        }
+        #home{
+            height: 60vh;
+            background-color: rgb(31, 31, 31);
+        }
+        nav{
+            /* margin-left: 20vw; */
+            margin-top: 0.5vh;
+            position: fixed;
+            width: 100vw;
+            border: 1px solid white;
+            height: 3vh;
+            padding: 5px;
+            background-color: rgb(31, 31, 31);
+        }
+        .nav{
+            color: white;
+            height: 3vh;
+            padding: 5px;
+            margin-left:0.2vw ;
+            margin-right: 0.2vw;
+            
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .name{
+            color: white;
+            font-size: xx-large;
+        }
+        .description{
+            color: white;
+            font-weight: lighter;
+        }
+        .info{
+            color: white;
+            margin-top: 30vh;
+            text-align: center;
+        }
+        #about{
+            height: 90vh;
+        }
+        #quote{
+            height: 15vh;
+            background-color: rgb(31, 31, 31);
+        }
+
+        #achievements{
+            height: 60vh;
+        }
+        #foot{
+            height: 20vh;
+            background-color: rgb(31, 31, 31);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <home class="content" id="home">
+            <nav>
+                <label class="nav"><a href="#home">Home</a></label>
+                <label class="nav"><a href="#about">About</a></label>
+                <label class="nav"><a href="#achievements">Achievements</a></label>
+            </nav>
+            <div class="info">
+                <name class="name">Kazim Nazrul Islam</name>
+                <br>
+                <description class="description">The national poet of Bangladesh</description>
+            </div>
+        </home>
+        <about class="content" id="about">About</about>
+        <quote class="content" id="quote">
+            <div class="info" style="font-size: medium;">
+                <label class="quote">"Love has no meaning or amount."-Kazi Nazrul Islam</label>
+            </div>    
+        </quote>
+        <achievements class="content" id="achievements">Achievements</achievements>
+        <footer class="content" id="foot">foot</footer>
+    </div>
+</body>
+</html>
