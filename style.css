@@ -34,11 +34,11 @@ nav{
     padding: 5px;
     margin-left:0.2vw ;
     margin-right: 0.2vw;
-    
 }
 a{
     text-decoration: none;
     color: white;
+    font-size: medium;
 }
 .name{
     color: white;
@@ -135,7 +135,7 @@ svg{
     font-size: x-large;
 }
 #achievements{
-    height: 90vh;
+    height: 100vh;
 }
 #foot{
     height: 20vh;
@@ -205,12 +205,19 @@ hr {
     margin-top: 5%;
     text-align: left !important;
     margin-left: 5%; ;
+    color: #353535;
 }
 
 
 @media only screen and (max-width: 575px) {
+    #home{
+        height: 40vh;
+    }
     .name{
         font-size: 30px;
+    }
+    .info-name{
+        margin-top: 30%;
     }
     .description{
         font-size: 15px;
@@ -261,14 +268,14 @@ hr {
         width: 40%;
     }
     #con-abt{
-        height: 60vh;
+        height: 60vh;   
     }
     #quote{
-        height: 10vh;
+        height: 5vh;
     }
     .quote{
-        margin-top: 6%;
-        font-size:medium;
+        margin-top: 2.5%;
+        font-size:small;
     }
     .achi-title{  
         line-height: 0.1em;
@@ -284,6 +291,57 @@ hr {
         display: flex;
         justify-content: space-between;
     }
+    .awards-in{
+        width: 45%;
+        height: 70%;
+        margin-top: 2%;
+        padding: 0.5%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }  
+    .awards{
+        margin-left: 2% ;
+        margin-right: 2% !important;
+        margin-top: 5%;
+        width: 100%;
+        height: 15vh;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0px -5px;
+        font-size: small;
+    }
+    .award-content{
+        font-size: small; 
+    }
+
+
+    .literature{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 30%;
+        padding: 0;
+        margin-left: 3%; 
+        margin-right: 3%;
+    }
+    .achi-literature{
+        /* border: 2px solid black; */
+        width: 100%;
+        height: 90%;
+        margin-left: 2%;
+        text-align: center;
+    
+    }
+    .literature-title{
+        font-size: 20px;
+    }   
+    .poetry{
+        margin-top: 5%;
+        text-align: left !important;
+        margin-left: 0;
+        font-size: small;
+    }
+
 
 
 }    
