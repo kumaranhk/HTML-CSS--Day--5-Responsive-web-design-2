@@ -3,6 +3,9 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+a{
+    cursor: pointer;
+}
 .main{
     /* border: 2px solid black; */
     display: flex;
@@ -20,10 +23,12 @@
 }
 nav{
     /* margin-left: 20vw; */
-    margin-top: 0.5vh;
+    left: 0px;
+    top: 0px;
+    /* margin-top: 0.5vh; */
     position: fixed;
     width: 100vw;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 3vh;
     padding: 5px;
     background-color: rgb(31, 31, 31);
@@ -35,7 +40,7 @@ nav{
     margin-left:0.2vw ;
     margin-right: 0.2vw;
 }
-a{
+.nav a{
     text-decoration: none;
     color: white;
     font-size: medium;
@@ -52,7 +57,7 @@ a{
 }
 .info-name{
     color: white;
-    margin-top: 30vh;
+    margin-top: 15%;
     text-align: center;
 }
 #about{
@@ -94,7 +99,7 @@ h2{
     display: flex;
     justify-content: space-between;
     margin-left: 35vw;
-    margin-top: 5%;
+    margin-top: 30px;
     
 }
 button{
@@ -129,17 +134,13 @@ svg{
 }
 .quote{
     color: white;
-    margin-top: 4%;
+    margin-top: 3%;
     text-align: center;
     font-weight: lighter;
     font-size: x-large;
 }
 #achievements{
     height: 100vh;
-}
-#foot{
-    height: 20vh;
-    background-color: rgb(31, 31, 31);
 }
 hr {
     border: 1px solid #ccc;
@@ -162,7 +163,7 @@ hr {
     margin-right: 10%;
     margin-top: 5%;
     width: 80%;
-    height: 10vh;
+    height: 15vh;
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
@@ -170,7 +171,8 @@ hr {
 .awards-in{
     width: 20%;
     height: 100%;
-    border: 1px solid black;
+    padding: 3px;
+    border: 1px solid rgb(161, 160, 160);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -207,8 +209,45 @@ hr {
     margin-left: 5%; ;
     color: #353535;
 }
-
-
+#foot{
+    height: 20vh;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.foot-first{
+    /* border: 1px solid white; */
+    width: 20%;
+    margin-left: 2%;
+    padding-top: 3% !important;
+    padding: 1%;
+}
+.foot-head{
+    font-weight: bold;
+    font-size: medium;
+}
+.foot-content{
+    margin-top: 5% ;
+    margin-left: 2%;
+    font-weight: lighter;
+    font-size: small;
+}
+.foot-fade{
+    color: #949494;
+}
+.foot-content a{
+    text-decoration: none;
+    color: aqua;
+}
+.second{
+    width: 10% !important ;
+}
+.vl {
+    border-left: 1px solid rgb(104, 104, 104);
+    margin-top: 1%;
+    height: 80%;
+  }
 @media only screen and (max-width: 575px) {
     #home{
         height: 40vh;
@@ -232,7 +271,7 @@ hr {
     }
     .about-text{
         /* border: 1px solid black; */
-        height: 20vh;
+        height: 10vh;
         width: 90%;
         padding: 5%;
         margin-left: 2%;
@@ -246,14 +285,14 @@ hr {
         background-repeat: no-repeat;
     }
     #text2{
-        margin-top: 0;
+        margin-top: 10%;
     }
     .links{
         width: 90%;
         justify-content: space-evenly;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 0;
+        margin-top: 20%;
     }
     button{
         display: flex;
@@ -344,4 +383,46 @@ hr {
 
 
 
+    #foot{
+        height: 35vh;
+        background-color: rgb(31, 31, 31);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+    }
+    .foot-first{
+        /* border: 1px solid white; */
+        width: 40%;
+        margin-left: 0.5%;
+        padding-top: 3% !important;
+        padding: 0.5%;
+        height: 100px;
+    }
+    .foot-head{
+        font-weight: bold;
+        font-size: small;
+    }
+    .foot-content{
+        margin-top: 5% ;
+        margin-left: 2%;
+        font-weight: lighter;
+        font-size: smaller;
+    }
+    .foot-fade{
+        color: #949494;
+    }
+    .foot-content a{
+        text-decoration: none;
+        color: aqua;
+    }
+    .vl{
+        border-left: none;
+        margin-top: 0;
+        height: 0;
+    }
+    .second{
+        width: 3% !important ;
+    }
 }    
