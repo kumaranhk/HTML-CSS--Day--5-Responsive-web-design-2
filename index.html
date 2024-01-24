@@ -5,195 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laud Page</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-        .main{
-            /* border: 2px solid black; */
-            display: flex;
-            flex-direction: column;
-            width: 100vw;
-        }
-        .content{
-            border: 2px solid black;
-            padding: 2px;
-            height: 90vh;
-        }
-        #home{
-            height: 60vh;
-            background-color: rgb(31, 31, 31);
-        }
-        nav{
-            /* margin-left: 20vw; */
-            margin-top: 0.5vh;
-            position: fixed;
-            width: 100vw;
-            border: 1px solid white;
-            height: 3vh;
-            padding: 5px;
-            background-color: rgb(31, 31, 31);
-        }
-        .nav{
-            color: white;
-            height: 3vh;
-            padding: 5px;
-            margin-left:0.2vw ;
-            margin-right: 0.2vw;
-            
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        .name{
-            color: white;
-            font-size: 50px;
-            font-weight: lighter;
-        }
-        .description{
-            color: white;
-            font-size: larger;
-            font-weight: lighter;
-        }
-        .info-name{
-            color: white;
-            margin-top: 30vh;
-            text-align: center;
-        }
-        #about{
-            display: grid;
-            grid-template-areas: 
-            "text1 pic"
-            "text2 pic";
-            justify-content: space-evenly;
-            align-content: center;
-            margin-top: 10%;
-        }
-        .about-text{
-            border: 1px solid black;
-            height: 20vh;
-            width: 30vw;
-            padding: 5%;
-            margin-left: 7%;
-            
-        }
-        #text1{
-            grid-area: text1;
-        }
-        #text2{
-            grid-area: text2;
-        }
-        .about-pic{
-            border: 1px solid black;
-            height: 50vh;
-            width: 23vw;
-            grid-area: pic;
-            background-image: url(Screenshot\ from\ 2024-01-23\ 20-32-27.png);
-            background-repeat: no-repeat;
-        }
-        h2{
-            padding-bottom: 3%;
-        }
-        .links{
-            width: 30vw;
-            display: flex;
-            justify-content: space-between;
-            margin-left: 450px;
-            margin-top: 5%;
-            
-        }
-        button{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding-right: 10px !important;
-            padding: 1%;
-            width: 8vw;
-            font-size: 15px;
-            border: none;
-            border-radius: 5px;
-        }
-        .wiki{
-            width: 10vw;
-            background-color: rgb(207, 207, 207);
-        }
-        .youtube{
-            background-color: rgb(255, 0, 0);
-            color: white;
-        }
-        .amazon{
-            background-color: rgb(255, 136, 0);
-            color: white;
-        }
-        svg{
-            padding: 5px;
-        }
-        #quote{
-            height: 15vh;
-            background-color: rgb(31, 31, 31);
-        }
-        .quote{
-            color: white;
-            margin-top: 4%;
-            text-align: center;
-            font-weight: lighter;
-            font-size: x-large;
-        }
-        #achievements{
-            height: 60vh;
-        }
-        #foot{
-            height: 20vh;
-            background-color: rgb(31, 31, 31);
-        }
-        hr {
-            border: 1px solid #ccc; /* Set border color */
-            margin: 10px 0; /* Set margin for spacing */
-        }
-        .achi-title{
-            width: 100%; 
-            text-align: center; 
-            border-bottom: 1px solid #000; 
-            line-height: 0.1em;
-            margin: 30px 0 20px; 
-        } 
-         
-        .achi-title span{ 
-            background:#fff; 
-            padding:0 10px; 
-        }
-        .awards{
-            margin-left:10% ;
-            width: 80%;
-            height: 10vh;
-            border: 1px solid black;
-            display: flex;
-            justify-content: space-between;
-
-        }
-        .awards-in{
-            width: 20%;
-            height: 100%;
-            border: 1px solid black;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-        }  
-        .award-year{
-            color: #494949;
-        }
-        .award-content{
-            color: #353535;
-            font-size: 15px;
-            
-        }
-        
-
-        
-    </style>
 </head>
 <body>
     <div class="main">
@@ -209,7 +20,7 @@
                 <description class="description">The national poet of Bangladesh</description>
             </div>
         </div>
-        <div class="content">
+        <div class="content" id="con-abt">
             <div id="about">
                 <div class="about-text" id="text1">
                     <h2>Rebel poet</h2>
@@ -274,11 +85,48 @@
                         <p class="award-content">Bangladesh's highest civilian honours.</p>
                     </div>
                 </div>
-                <div class="achi-literature"></div>
-                <div class="achi-literature"></div>
+                <div class="literature">
+                    <div class="achi-literature">
+                        <label class="literature-title"><span>Poetry</span></label>
+                        <div class="poetry">
+                            <ul>
+                                <li>Agnibeena (The Fiery Lute), 1922</li>
+                                <li>Sanchita (Collected poems), 1925</li>
+                                <li>Phanimanasa (The Cactus), 1927</li>
+                                <li>Chakrabak (The Flamingo), 1929</li>
+                                <li>Satbhai Champa (The Seven Brothers of Champa), juvenile poems, 1933</li>
+                                <li>Nirjhar (Fountain), 1939</li>
+                                <li>Natun Chand (The New Moon), 1939</li>
+                                <li>Morubhaskar (The Sun in the Desert), 1951</li>
+                                <li>Sanchayan (Collected Poems), 1955</li>
+                                <li>Nazrul Islam: Islami Kobita (A Collection of Islamic Poems; Dhaka, Bangladesh: Islamic Foundation, 1982)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="achi-literature">
+                        <label class="literature-title"><span>Poems and songs</span></label>
+                        <div class="poetry">
+                            <ul>
+                                <li>Dolan Chapa (name of a faintly fragrant monsoon flower), 1923</li>
+                                <li>Bisher Bashi (The Poison Flute), 1924</li>
+                                <li>Bhangar Gan (The Song of Destruction), 1924 proscribe in 1924</li>
+                                <li>Chhayanat (The Raga of Chhayanat), 1925</li>
+                                <li>Chittanama (On Chittaranjan), 1925</li>
+                                <li>Samyabadi (The Proclaimer of Equality), 1926</li>
+                                <li>Puber Hawa (The Eastern Wind), 1926</li>
+                                <li>Sarbahara (The Proletariat), 1926</li>
+                                <li>Sindhu Hindol (The Undulation of the Sea), 1927</li>
+                                <li>Jinjir (Chain), 1928</li>
+                                <li>Pralaya Shikha (Doomsday Flame), 1930 proscribed in 1930</li>
+                                <li>Shesh Saogat (The Last Offerings), 1958</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
             </div>
         </div>
-        <div class="content" id="foot">foot</div>
+        <div class="content" id="foot">
+        </div>
     </div>
 </body>
 </html>

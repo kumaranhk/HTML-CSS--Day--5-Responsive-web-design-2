@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.main{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.content{
+    /* border: 2px solid black; */
+    padding: 2px;
+    height: 90vh;
+}
+#home{
+    height: 60vh;
+    background-color: rgb(31, 31, 31);
+}
+nav{
+    /* margin-left: 20vw; */
+    margin-top: 0.5vh;
+    position: fixed;
+    width: 100vw;
+    border: 1px solid white;
+    height: 3vh;
+    padding: 5px;
+    background-color: rgb(31, 31, 31);
+}
+.nav{
+    color: white;
+    height: 3vh;
+    padding: 5px;
+    margin-left:0.2vw ;
+    margin-right: 0.2vw;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.name{
+    color: white;
+    font-size: 50px;
+    font-weight: lighter;
+}
+.description{
+    color: white;
+    font-size: larger;
+    font-weight: lighter;
+}
+.info-name{
+    color: white;
+    margin-top: 30vh;
+    text-align: center;
+}
+#about{
+    display: grid;
+    grid-template-areas: 
+    "text1 pic"
+    "text2 pic";
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 5%;
+}
+.about-text{
+    /* border: 1px solid black; */
+    height: 20vh;
+    width: 30vw;
+    padding: 5%;
+    margin-left: 7%;
+}
+#text1{
+    grid-area: text1;
+}
+#text2{
+    margin-top: 20%;
+    grid-area: text2;
+}
+.about-pic{
+    /* border: 1px solid black; */
+    height: 50vh;
+    width: 30vw;
+    grid-area: pic;
+    background-image: url(Screenshot\ from\ 2024-01-23\ 20-32-27.png);
+    background-repeat: no-repeat;
+}
+h2{
+    padding-bottom: 3%;
+}
+.links{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35vw;
+    margin-top: 5%;
+    
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px !important;
+    padding: 1%;
+    width: 8vw;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+.wiki{
+    width: 10vw;
+    background-color: rgb(207, 207, 207);
+}
+.youtube{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+.amazon{
+    background-color: rgb(255, 136, 0);
+    color: white;
+}
+svg{
+    padding: 5px;
+}
+#quote{
+    height: 15vh;
+    background-color: rgb(31, 31, 31);
+}
+.quote{
+    color: white;
+    margin-top: 4%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: x-large;
+}
+#achievements{
+    height: 90vh;
+}
+#foot{
+    height: 20vh;
+    background-color: rgb(31, 31, 31);
+}
+hr {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+.achi-title{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 30px 0 20px; 
+} 
+ 
+.achi-title span{ 
+    background:#fff; 
+    padding:0 10px; 
+}
+.awards{
+    margin-left:10% ;
+    margin-right: 10%;
+    margin-top: 5%;
+    width: 80%;
+    height: 10vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+.awards-in{
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}  
+.award-year{
+    color: #494949;
+}
+.award-content{
+    color: #353535;
+    font-size: 15px;
+    
+}
+.literature{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-left:10%;
+    margin-right: 10%;
+}
+.achi-literature{
+    /* border: 2px solid black; */
+    width: 40%;
+    height: 40vh;
+    text-align: center;
+
+}
+.literature-title{
+    font-size: 30px;
+}   
+.poetry{
+    margin-top: 5%;
+    text-align: left !important;
+    margin-left: 5%; ;
+}
+
+
+@media only screen and (max-width: 575px) {
+    .name{
+        font-size: 30px;
+    }
+    .description{
+        font-size: 15px;
+    }
+    #about{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        margin-top: 0;
+        font-size: small;
+    }
+    .about-text{
+        /* border: 1px solid black; */
+        height: 20vh;
+        width: 90%;
+        padding: 5%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .about-pic{
+        /* border: 1px solid black; */
+        height: 0;
+        width: 0;
+        background-image: none;
+        background-repeat: no-repeat;
+    }
+    #text2{
+        margin-top: 0;
+    }
+    .links{
+        width: 90%;
+        justify-content: space-evenly;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 0;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 10px !important;
+        padding: 1%;
+        width: 20%;
+        font-size: small;
+    }
+    .wiki{
+        width: 40%;
+    }
+    #con-abt{
+        height: 60vh;
+    }
+    #quote{
+        height: 10vh;
+    }
+    .quote{
+        margin-top: 6%;
+        font-size:medium;
+    }
+    .achi-title{  
+        line-height: 0.1em;
+        margin: 10px 0 10px; 
+    } 
+    .awards{
+        margin-left:10% ;
+        margin-right: 10%;
+        margin-top: 5%;
+        width: 80%;
+        height: 10vh;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}    
